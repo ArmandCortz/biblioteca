@@ -3,10 +3,10 @@
   Parta la correcta instalacion del proyecto es necesario que ingreses los siguientes comandos:
 </p>
 <p>
-  *antes debes de configurar tus bariables de entorno
-  npm install
-  php artisan migrate
-  php artisan db:seed
+  *antes debes de configurar tus bariables de entorno br
+  npm install br
+  php artisan migrate br
+  php artisan db:seed br
 </p>
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
