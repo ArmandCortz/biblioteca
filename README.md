@@ -1,9 +1,9 @@
 <h2>Instrucciones de instalación </h2>
 <p>
-  Parta la correcta instalacion del proyecto es necesario que ingreses los siguientes comandos:
+  Para la correcta instalacion del proyecto es necesario que ingreses los siguientes comandos:
 </p>
 <p>
-  *antes debes de configurar tus bariables de entorno <br>
+  *antes debes de configurar tus variables de entorno <br>
   npm install <br>
   php artisan migrate <br>
   php artisan db:seed <br>
