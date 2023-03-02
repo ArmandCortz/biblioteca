@@ -14,20 +14,23 @@ return new class extends Migration
     public function up()
     {
         //create_users_table
-        Schema::create('usuarios', function (Blueprint $table) {
+        Schema::create('users', function (Blueprint $table) {
             $table->string('id',11)->primary()->unique();
-            $table->string('doc_type',100);
-            $table->string('nombres',100);
-            $table->string('apellidos',100);
-            $table->string('apodo',100);
-            $table->string('direccion',200);
-            $table->float("telefono",11,0);
-            $table->string('nacionalidad',100);
-            $table->float('rol',1,0);
-            $table->string('email')->unique();
+            $table->string('doc_type',100)->nullable();
+            $table->string('nombres',100)->nullable();
+            $table->string('apellidos',100)->nullable();
+            $table->string('apodo',100)->nullable();
+            $table->string('direccion',200)->nullable();
+            $table->float("telefono",11,0)->nullable();
+            $table->string('nacionalidad',100)->nullable();
+            $table->float('rol',1,0)->default(3);
+            $table->string('email')->unique()->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
+            $table->string('updated_at',100)->nullable();
+            $table->string('created_at',100)->nullable();
+
             
             $table->foreign("rol")->references('id')->on('roles');
         });
@@ -40,6 +43,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('usuarios');
+        Schema::dropIfExists('users');
     }
 };

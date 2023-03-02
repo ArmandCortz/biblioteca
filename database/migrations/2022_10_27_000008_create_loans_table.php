@@ -23,7 +23,7 @@ return new class extends Migration
             $table->dateTime("fech_devolucion")->nullable();
             
             $table->foreign("libro")->references('id')->on('libros');
-            $table->foreign("usuario")->references('id')->on('usuarios');
+            $table->foreign("usuario")->references('id')->on('users');
         });
     }
 

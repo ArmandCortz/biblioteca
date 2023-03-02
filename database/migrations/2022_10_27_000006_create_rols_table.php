@@ -16,7 +16,7 @@ return new class extends Migration
         //create_rols_table
         Schema::create('roles', function (Blueprint $table) {
             $table->float("id",11,0)->primary()->unique();
-            $table->string("nombre",10);
+            $table->string("nombre",20);
             $table->string("descripcion",200);
         });
     }

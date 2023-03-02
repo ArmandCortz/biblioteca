@@ -61,8 +61,10 @@ return [
 
     'providers' => [
         'users' => [
+            'table' => 'password_resets',
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
+            
         ],
 
         // 'users' => [
