@@ -5,7 +5,7 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <img src="{{ URL::asset('img//logo.png') }}" alt="Logo" class="w-10 h-10">
+                    <img src="{{ URL::asset('img//logo.png') }}" alt="Logo" class="w-20 h-20">
                 </div>
 
                 <!-- Navigation Links -->
