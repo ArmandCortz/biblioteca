@@ -23,13 +23,8 @@ return new class extends Migration
             $table->string('direccion',200)->nullable();
             $table->float("telefono",11,0)->nullable();
             $table->string('nacionalidad',100)->nullable();
-<<<<<<< HEAD
             $table->float('rol',1,0)->default(3);
             $table->string('email')->unique()->nullable();
-=======
-            $table->float('rol',1,0);
-            $table->string('email')->unique();
->>>>>>> 9014123e383dd9fec56bbc4b8d1e29c9644bcb13
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();

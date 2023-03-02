@@ -15,7 +15,6 @@ class UsuariosSeeder extends Seeder
      */
     public function run()
     {
-<<<<<<< HEAD
         DB::table('users')->insert([
             'id'=>'gc01135836',
             'nombres' => 'Leonel Armando',
@@ -26,16 +25,3 @@ class UsuariosSeeder extends Seeder
         ]);
     }
 }
-=======
-        DB::table('usuarios')->insert([
-            'id' => "gc01135836",
-            'nombres' => 'Leonel Armando',
-            'apellidos'=>'Garcia Cortez',
-            'email'=>'armand1515.lc@gmail.com',
-            'rol' => 1,
-            'password' => bcrypt('leonel'),
-
-        ]);
-    }
-}
->>>>>>> 9014123e383dd9fec56bbc4b8d1e29c9644bcb13

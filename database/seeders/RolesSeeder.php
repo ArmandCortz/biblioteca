@@ -18,7 +18,6 @@ class RolesSeeder extends Seeder
         DB::table('roles')->insert([
             'id' => 1,
             'nombre' => 'Administrador',
-<<<<<<< HEAD
             'descripcion'=>'Administrador general del sistema'
         ]);
         
@@ -35,19 +34,3 @@ class RolesSeeder extends Seeder
         ]);
     }
 }
-=======
-            'descripcion'=>'',
-        ]);
-        DB::table('roles')->insert([
-            'id' => 2,
-            'nombre' => 'Bibliotecario',
-            'descripcion'=>'',
-        ]);
-        DB::table('roles')->insert([
-            'id' => 3,
-            'nombre' => 'Estudiante',
-            'descripcion'=>'',
-        ]);
-    }
-}
->>>>>>> 9014123e383dd9fec56bbc4b8d1e29c9644bcb13

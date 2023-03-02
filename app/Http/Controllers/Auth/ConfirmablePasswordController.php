@@ -9,9 +9,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
 use Illuminate\View\View;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Validation\ValidationException;
 
 class ConfirmablePasswordController extends Controller
 {
@@ -19,10 +16,6 @@ class ConfirmablePasswordController extends Controller
      * Show the confirm password view.
      */
     public function show(): View
-     *
-     * @return \Illuminate\View\View
-     */
-    public function show()
     {
         return view('auth.confirm-password');
     }
@@ -31,11 +24,6 @@ class ConfirmablePasswordController extends Controller
      * Confirm the user's password.
      */
     public function store(Request $request): RedirectResponse
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return mixed
-     */
-    public function store(Request $request)
     {
         if (! Auth::guard('web')->validate([
             'email' => $request->user()->email,
