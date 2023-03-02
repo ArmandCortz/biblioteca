@@ -1,5 +1,4 @@
 <x-guest-layout>
-<<<<<<< HEAD
     <div class="mb-4 text-sm text-gray-600 dark:text-gray-400">
         {{ __('This is a secure area of the application. Please confirm your password before continuing.') }}
     </div>
@@ -25,7 +24,6 @@
             </x-primary-button>
         </div>
     </form>
-=======
     <x-auth-card>
         <x-slot name="logo">
             <a href="/">
@@ -59,5 +57,4 @@
             </div>
         </form>
     </x-auth-card>
->>>>>>> 9014123e383dd9fec56bbc4b8d1e29c9644bcb13
 </x-guest-layout>

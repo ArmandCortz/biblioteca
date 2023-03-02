@@ -1,5 +1,4 @@
 <x-guest-layout>
-<<<<<<< HEAD
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
@@ -66,7 +65,6 @@
             </x-primary-button>
         </div>
     </form>
-=======
     <x-auth-card>
         <x-slot name="logo">
             <a href="/">
@@ -122,5 +120,4 @@
             </div>
         </form>
     </x-auth-card>
->>>>>>> 9014123e383dd9fec56bbc4b8d1e29c9644bcb13
 </x-guest-layout>
