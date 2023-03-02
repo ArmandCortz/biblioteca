@@ -5,10 +5,7 @@ use App\Http\Controllers\Auth\ConfirmablePasswordController;
 use App\Http\Controllers\Auth\EmailVerificationNotificationController;
 use App\Http\Controllers\Auth\EmailVerificationPromptController;
 use App\Http\Controllers\Auth\NewPasswordController;
-<<<<<<< HEAD
 use App\Http\Controllers\Auth\PasswordController;
-=======
->>>>>>> 9014123e383dd9fec56bbc4b8d1e29c9644bcb13
 use App\Http\Controllers\Auth\PasswordResetLinkController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\VerifyEmailController;
@@ -35,7 +32,6 @@ Route::middleware('guest')->group(function () {
                 ->name('password.reset');
 
     Route::post('reset-password', [NewPasswordController::class, 'store'])
-<<<<<<< HEAD
                 ->name('password.store');
 });
 
@@ -44,16 +40,6 @@ Route::middleware('auth')->group(function () {
                 ->name('verification.notice');
 
     Route::get('verify-email/{id}/{hash}', VerifyEmailController::class)
-=======
-                ->name('password.update');
-});
-
-Route::middleware('auth')->group(function () {
-    Route::get('verify-email', [EmailVerificationPromptController::class, '__invoke'])
-                ->name('verification.notice');
-
-    Route::get('verify-email/{id}/{hash}', [VerifyEmailController::class, '__invoke'])
->>>>>>> 9014123e383dd9fec56bbc4b8d1e29c9644bcb13
                 ->middleware(['signed', 'throttle:6,1'])
                 ->name('verification.verify');
 
@@ -66,11 +52,8 @@ Route::middleware('auth')->group(function () {
 
     Route::post('confirm-password', [ConfirmablePasswordController::class, 'store']);
 
-<<<<<<< HEAD
     Route::put('password', [PasswordController::class, 'update'])->name('password.update');
 
-=======
->>>>>>> 9014123e383dd9fec56bbc4b8d1e29c9644bcb13
     Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])
                 ->name('logout');
 });
