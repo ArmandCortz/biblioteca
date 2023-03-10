@@ -4,11 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
     "content-hash": "3a0398cfe729bea409d01dacdd4cf3ed",
-=======
-    "content-hash": "03df367d88fae07c9ade46baebc21093",
->>>>>>> 9014123e383dd9fec56bbc4b8d1e29c9644bcb13
     "packages": [
         {
             "name": "brick/math",
@@ -5682,7 +5678,6 @@
         },
         {
             "name": "laravel/breeze",
-<<<<<<< HEAD
             "version": "v1.19.2",
             "source": {
                 "type": "git",
@@ -5700,25 +5695,6 @@
                 "illuminate/filesystem": "^9.21|^10.0",
                 "illuminate/support": "^9.21|^10.0",
                 "illuminate/validation": "^9.21|^10.0",
-=======
-            "version": "v1.14.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel/breeze.git",
-                "reference": "e1816890159f7c772066cce0317d2b54904b701f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel/breeze/zipball/e1816890159f7c772066cce0317d2b54904b701f",
-                "reference": "e1816890159f7c772066cce0317d2b54904b701f",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/console": "^9.21",
-                "illuminate/filesystem": "^9.21",
-                "illuminate/support": "^9.21",
-                "illuminate/validation": "^9.21",
->>>>>>> 9014123e383dd9fec56bbc4b8d1e29c9644bcb13
                 "php": "^8.0.2"
             },
             "conflict": {
@@ -5759,11 +5735,7 @@
                 "issues": "https://github.com/laravel/breeze/issues",
                 "source": "https://github.com/laravel/breeze"
             },
-<<<<<<< HEAD
             "time": "2023-02-18T20:55:43+00:00"
-=======
-            "time": "2022-10-26T08:00:51+00:00"
->>>>>>> 9014123e383dd9fec56bbc4b8d1e29c9644bcb13
         },
         {
             "name": "laravel/pint",
