@@ -11,11 +11,7 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-<<<<<<< HEAD
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
-=======
-                sans: ['Nunito', ...defaultTheme.fontFamily.sans],
->>>>>>> 9014123e383dd9fec56bbc4b8d1e29c9644bcb13
             },
         },
     },
