@@ -206,8 +206,22 @@ class SubcategoriaSeeder extends Seeder
         DB::table('subcategorias')->insert([
             'id' => 190,
             'nombre' => 'Filosofía moderna occidental',
-            'descripcion'=>'',
-            'categoria'=>100
+            'descripcion' => '',
+            'categoria' => 100
+        ]);
+        
+        DB::table('subcategorias')->insert([
+            'id' => 570,
+            'nombre' => 'Ciencias biológicas',
+            'descripcion' => '',
+            'categoria' => 500
+        ]);
+        
+        DB::table('subcategorias')->insert([
+            'id' => 610,
+            'nombre' => 'Ciencias médicas',
+            'descripcion' => '',
+            'categoria' => 600
         ]);
     }
 }

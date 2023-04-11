@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
         $this->call(SubcategoriaSeeder::class);
         $this->call(RolesSeeder::class);
         $this->call(UsuariosSeeder::class);
+        $this->call(BookSeeder::class);
 
     }
 }
